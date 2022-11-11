@@ -1,0 +1,55 @@
+
+*{
+    padding: none;
+    border: none;
+    text-decoration: none;
+}
+body{
+    display: block;
+    padding-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Main{
+    text-align: center;
+}
+button img{
+    width:30px;
+    height:20px;
+    border-radius: 100%;
+}
+.labels{
+   font-size: smaller;
+   font-weight: lighter;
+}
+button{
+    width: 300px;
+    color:white;
+    background-color: rgb(32, 116, 226);
+    border-radius: 1px;
+}
+.login{
+    background-color: black;
+}
+input{
+    border:solid 1px gray;
+    width:300px;
+    height:30px;
+}
+form{
+    padding-left: 480px;
+}
+label a{
+    padding-left: 75px;
+}
+a{
+    color: gray;
+    text-decoration: underline;
+}
+/* #Border{
+    border: solid 1px gray;
+    width: 100px;
+    height:20px;
+} */
+
+
+  
