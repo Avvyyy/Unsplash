@@ -1,136 +1,206 @@
-g<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Unslpash</title>
+    <title>Join Unsplash</title>
     <style>
-    *{
-        padding: none;
-        border: none;
-        text-decoration: none;
-    }
+        *,
+        *::before,
+        *::after {
+            padding: none;
+            margin: none;
+            border: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
 
-header{ text-align: center;
-padding-top: 150px;
-color:white;}
+        body {
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            gap: 100px;
+        }
 
-.Main img{
-    width:50px;
-    height:50px;
-}
+        .Main {
+            background-image: url(image/backgroundunsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 41em;
+            width: 40%;
+            overflow-y: scroll;
+            position:sticky;
+            top: 0px;
+        }
 
+        .Main div {
+            padding-left: 50px;
+            padding-top: 50px;
+        }
 
-body{
-    display: grid;
-    grid-template-columns: 50vh 100vh;  
-    font-family:Arial, Helvetica, sans-serif ;  
-    gap: 30px;   
-}
+        .Main img {
+            width: 40px;
+            height: 40px;
+        }
 
- .Main{
-    background-image:url(image/backgroundunsplash.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    height:100vh;
-    width:50vh;
-    background-size: cover;
-    grid-area: 1 / 1 / 1 /1 ;
- }
- .div2{
-    grid-area: 1 / 2 / 1 /2 ;
-    padding-top: 150px;
-}
- span{
-    font-size: 11px;
-    font-weight: lighter;
+        header {
+            padding-top: 70px;
+            color: white;
+            font-weight: bold;
+            line-height: 50px;
+        }
 
- }
- label span{color: gray;}
- a{
-    color: rgb(165, 156, 156);
-    text-decoration: underline;
- }
- button{
-    background-color: rgb(32, 116, 226);
-    color: white;
-    text-align: center;
-    width: 300px;;
- }
- form button{
-    background-color: black;
- }
- #email, #pwd, #Uname {width:300px;}
- input{border:solid 1px gray;
-}
-.Special{
-   
-    display: grid;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 30px 30px;
-    gap: 5px;
-}
-.fname{ grid-area: 1 / 1 / 1 / 1;}       
-.lname{ grid-area: 1 / 2 / 1 / 2;}
-#fname{ grid-area: 2 / 1 / 2 / 1;}
- 
-.Join{padding-left: 80px;}
-.central{padding-left: 30px;}
-.or{padding-left: 135px;}
+        header h1 {
+            font-size: 50px;
+        }
 
+        header p {
+            font-size: 20px;
+            line-height: 30px;
+        }
 
+        .div2 {
+            padding: 50px;
+            margin-left: 30px; 
+        }
+
+        .div-on-div{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .Join {
+            font-size: 30px;
+            line-height: 5px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: rgb(32, 116, 226);
+            color: white;
+            text-align: center;
+            height: 40px;
+            width: 500px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        span {
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        label span {
+            color: gray;
+        }
+
+        a {
+            color: rgb(165, 156, 156);
+            text-decoration: underline;
+        }
+
+        form button {
+            background-color: black;
+        }
+
+        #email,
+        #pwd,
+        #Uname {
+            height: 40px;
+            width: 500px;
+            border-radius: 5px;
+        }
+
+        input {
+            border: solid 1px gray;
+        }
+
+        .Special {
+
+            display: grid;
+            grid-template-columns: 250px 250px;
+            grid-template-rows: 40px 40px;
+            gap: 5px;
+        }
+
+        .fname {
+            grid-area: 1 / 1 / 1 / 1;
+        }
+
+        .lname {
+            grid-area: 1 / 2 / 1 / 2;
+        }
+
+        #fname {
+            grid-area: 2 / 1 / 2 / 1;
+        }
+
+        .Central {
+            padding-left: 100px;
+            margin-top: 30px;
+            font-size: 15px;
+        }
+
+        .or {
+            padding-left: 135px;
+        }
     </style>
 </head>
 
 
-<body> 
-    <div class="Main">  
-    <img src="image/white logo.jpg" alt="Logo">
-    <header>
-    <h1>Creation starts here</h1>
-    <p >Access 4,310,340 free, high-resolution<br> photos you can't find anywhere else</p>
-    </header>
+<body>
+    <div class="Main">
+        <div>
+            <img src="image/logo-white-8962708214629a3e8f9fbf5b87b70c3ace41c4175cbcc267f7fbb8449ac45bdd.svg" alt="Logo">
+            <header>
+                <h1>Creation starts <br> here</h1>
+                <p>Access 4,310,340 free, high-resolution<br> photos you can't find anywhere else</p>
+            </header>
+        </div>
     </div>
 
-<div class="div2">
-    <div class="Join">
-        <h2>Join Unsplash</h2>
-        <span>Already have an account? <a href==""">Login</a></span>
-        <br><br><br>             
-</div>
+    <div class="div2">
+        <div class="div-on-div">
+        <div class="Join">
+            <h2>Join Unsplash</h2>
+            <span>Already have an account? <a href="index (2).html">Login</a></span>
+        </div>
 
-        <button type="button" ><img src="image/facebookdownload.png" width="30px"> Login with Facebook</button>
+        <br><br><br>
+        <button type=" button"><img src="image/facebookdownload.png" width="30px"> Login with Facebook</button>
         <br><br>
-        <span class="OR">OR</span> 
-
-
-<form>
-    <div class="Special">
-          <label class="fname" for="Fname">First Name</label>
-          <input type="text" name="fname" id="fname" value="" >
-          <label for="Lname" class="lname">Last Name</label>
-          <input type="text" name="lname" id="lname" value="" >
+        <span class="OR">OR</span>
     </div>
 
-    <br>
-    <label for="email">Email</label>
-    <br>
-    <input type="email" name="email" id="email" value="">
-    <br><br>
-    <label for="Uname">Username <span>(only letters numbers,and underscores)</span></label>
-    <br>
-    <input type="text" name="Uname" id="Uname" value="">
-    <br><br>
-    <label for="pwd">Password <span>(min. 8 char)</span></label>
-    <BR>
-    <input type="password" id="pwd" name="pwd" minlength="8">
-    <br><br>
-    <button type="button">Join</button>
-</form>
+        <form>
+            <div class="Special">
+                <label class="fname" for="Fname">First Name</label>
+                <input type="text" name="fname" id="fname" value="">
+                <label for="Lname" class="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" value="">
+            </div>
 
-<span class="Central">By joining, you agree to the <a href="jgsljsj">Terms</a> and <a href="hhkljhkhi">Privacy</a></span>
-</div>
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" value="">
+            <br><br>
+            <label for="Uname">Username <span>(only letters numbers,and underscores)</span></label>
+            <br>
+            <input type="text" name="Uname" id="Uname" value="">
+            <br><br>
+            <label for="pwd">Password <span>(min. 8 char)</span></label>
+            <BR>
+            <input type="password" id="pwd" name="pwd" minlength="8">
+            <br><br>
+            <button type="button">Join</button>
+        </form>
+
+        <span class="Central">By joining, you agree to the <a href="jgsljsj">Terms</a> and <a
+                href="hhkljhkhi">Privacy</a></span>
+    </div>
 
 </body>
+
 </html>
